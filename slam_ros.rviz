@@ -1,0 +1,177 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Grid1
+        - /TF1
+      Splitter Ratio: 0.5
+    Tree Height: 368
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_common/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_common/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        world:
+          camera: {}
+      Update Interval: 0
+      Value: true
+    - Angle Tolerance: 0.1
+      Class: rviz_common/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 128; 0
+          Color Style: Flat
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.3
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: false
+      Enabled: true
+      Keep (Previous): 0
+      Length: 0.3
+      Name: Odometry (Pose)
+      Position Tolerance: 0.1
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /slam/pose
+      Value: true
+    - Arrow Length: 0.3
+      Axis Length: 0.3
+      Axis Radius: 0.03
+      Class: rviz_common/PoseArray
+      Color Name: Yellow
+      Enabled: false
+      Name: Path
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /slam/pose
+      Value: false
+    - Arrow Length: 0.3
+      Class: rviz_common/Twist
+      Enabled: true
+      Head Length: 0.1
+      Head Radius: 0.1
+      Name: Velocity
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /slam/velocity
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_common/Interact
+      Hide Inactive: true
+    - Class: rviz_common/MoveCamera
+    - Class: rviz_common/Select
+    - Class: rviz_common/FocusCamera
+    - Class: rviz_common/Measure
+      Class Name: rviz_common/Measure
+    - Class: rviz_tools_mongo_plugins/PublishPoint
+      Single click publish point: true
+  Value: true
+  Views:
+    Current:
+      Class: rviz_common/ThirdPersonFollower
+      Distance: 10
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.785398
+      Target Frame: camera
+      Value: ThirdPersonFollower (rviz_common)
+      Yaw: 0.785398
+    Saved Views: {}
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 846
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000029efc0200000008fb0000001200530065006c0065006300740069006f006e00020000003f0000003f0000003f000000fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073020000003f0000003f0000003f000000fb000000120056006900770073002001000000580000014d0000008d00fffffffb0000001200440069007300700006c00610079007301000000000000016a0000016a00fffffffb0000002800440069007300700006c006100790073002000500061006e0065006c01000001740000012a0000000000000000000000020000029e000000a9fc0100000001fb0000000a00560069006500770073010000000000000029e0000000000000000
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1400
+  X: 0
+  Y: 0

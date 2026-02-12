@@ -1,0 +1,85 @@
+# Build directories
+build/
+install/
+log/
+
+# ROS2 related
+*.colcon_ignore
+.colcon/
+colcon_build.rc
+colcon_command_prefix_build.sh*
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+cmake_install.cmake
+CTestConfiguration.ini
+CTestCustom.cmake
+CTestTestfile.cmake
+Makefile
+*.cmake
+
+# Compiled binaries
+mono
+mono-inertial
+mono-ros
+rgbd
+stereo
+stereo-inertial
+*.o
+*.so
+*.a
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.user
+.directory
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+
+# ROS bag and log files
+*.bag
+*.bag.active
+*.log
+
+# Trajectory/output files (keep some, ignore generated ones)
+trajectory_*.txt
+!README_SETUP.md
+!USAGE.md
+
+# Environment files
+*.env
+.env
+
+# Temporary files
+*.tmp
+*.bak
+*.swab
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Core dumps
+core.*
+vgcore.*
+
+# Coverage files
+.coverage
+coverage/
+
+# Misc build artifacts
+install_manifest.txt
+cmake_args.last
+colcon-build.log
