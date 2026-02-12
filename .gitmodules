@@ -1,3 +1,0 @@
-[submodule "src/ORB_SLAM3_ROS2"]
-	path = src/ORB_SLAM3_ROS2
-	url = ./src/ORB_SLAM3_ROS2
