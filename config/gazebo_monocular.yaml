@@ -24,14 +24,14 @@ Camera.fps: 30.0
 Camera.RGB: 1
 
 #============================
-# ORB Parameters
+# ORB Parameters (relaxed for Gazebo scenes)
 #============================
 
-ORBextractor.nFeatures: 1000
+ORBextractor.nFeatures: 2000         # Increased from 1000 (need more features in texture-poor scenes)
 ORBextractor.scaleFactor: 1.2
 ORBextractor.nLevels: 8
-ORBextractor.iniThFAST: 20
-ORBextractor.minThFAST: 7
+ORBextractor.iniThFAST: 10          # Decreased from 20 (extract more features)
+ORBextractor.minThFAST: 4           # Decreased from 7 (minimum threshold
 
 #============================
 # Viewer Parameters  

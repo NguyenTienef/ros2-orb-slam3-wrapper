@@ -47,23 +47,25 @@ This loads pre-configured display showing:
 ## Configuration
 
 ### Camera Calibration
-Edit `~/orbslam3_ws/config/gazebo_monocular.yaml`:
+Your Gazebo bocbot camera calibration (verify with `ros2 topic echo /bocbot/camera/image/camera_info`):
 ```yaml
-Camera.fx: 381.362     # focal length X
-Camera.fy: 381.362     # focal length Y
-Camera.cx: 320.5       # principal point X
-Camera.cy: 240.5       # principal point Y
+Camera.fx: 381.362          # focal length X (from K[0])
+Camera.fy: 381.362          # focal length Y (from K[4])
+Camera.cx: 320.5            # principal point X (from K[2])
+Camera.cy: 240.5            # principal point Y (from K[5])
 Camera.width: 640
 Camera.height: 480
 ```
+✓ **Already matches!** Edit `~/orbslam3_ws/config/gazebo_monocular.yaml` only if your camera differs.
 
 ### Topic Remapping
-In `run_slam_ros.sh`, adjust ROS args:
+`run_slam_ros.sh` automatically remaps topics for **bocbot namespace**:
 ```bash
 --ros-args \
-  -r /camera/image:=/your/camera/topic \
-  -r /imu/data:=/your/imu/topic
+  -r /camera/image:=/bocbot/camera/image        # Gazebo publishes here \
+  -r /imu/data:=/bocbot/imu/data               # Gazebo publishes here
 ```
+If using different topics, edit these lines in the script.
 
 ## Published Topics
 
